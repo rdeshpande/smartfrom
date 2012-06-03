@@ -1,0 +1,15 @@
+{
+  "name": "SmartFrom",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Figure out the appropriate from address based on the people you email.",
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["jquery.min.js", "underscore-min.js", "smartfrom.js"]
+    }
+  ],
+  "permissions": [
+    "tabs", "https://mail.google.com/*"
+  ]
+}
